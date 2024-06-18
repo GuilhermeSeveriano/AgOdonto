@@ -11,13 +11,19 @@
     src: url(../assets/fonts/Roboto-Regular.ttf);
 }
 
+@font-face {
+    font-family: Fonte2;
+    src: url(../assets/fonts/PlaywritePL-Regular.ttf);
+}
+
+
 html{
     font-family: Roboto;
 }
 
 .clear{clear: both;}
 .container{
-    max-width: 1000px;
+    max-width: 1050px;
     padding: 0 2%;
     margin: 0 auto;
 }
@@ -37,13 +43,18 @@ section.header-principal{
     float: left;
     width: 166px;
     height: 64px;
-    background-image: url(../assets/images/logo.png);
-    background-size: 100% 100%;
+    /* background-image: url(../assets/images/logo.png);
+    background-size: 100% 100%; */
+    font-family: fonte2;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffff;
 }
 
 header nav{
     float: left;
     padding-left: 60px;
+    padding-top: 10px;
 }
 
 header nav ul{
@@ -57,6 +68,9 @@ header li{
     font-size: 20px;
 }
 
+li a:hover{
+    color: #2c584c;
+}
 
 header li > a{
     color: white;
@@ -65,12 +79,14 @@ header li > a{
 
 .telefone-header{
     float: left;
+    padding-top: 10px;
 }
 
 .telefone-header span{
     font-size: 20px;
     color: #ffff;
     padding-left: 15px;
+    
 }
 
 section.header-principal header{
@@ -164,6 +180,7 @@ section.header-principal header{
 
 .group-2 img{
     width: 700px;
+    height: 405px;
 }
 
 .descrito{
@@ -180,3 +197,200 @@ section.header-principal header{
 .descrito b{
     color: #03ca9f;
 }
+
+.depoimento{
+    width: 100%;
+    min-height: 400px;
+    background-size: cover;
+    background-image: url(../assets/images/bg_02.png);
+}
+
+.mensagem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 400px;
+    text-align: center;
+    gap: 10px;
+}
+.mensagem h2{
+   font-size: 19px;
+   font-weight: 500;
+   font-style: italic;
+
+}
+
+.contato{
+    width: 100%;
+    background-color: #98FCDE;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-contato{
+    text-align: center;
+}
+
+.info-contato h2{
+    margin: 5px;
+    font-weight: bold;
+    color: #509d87;
+}
+
+.form-group{
+    padding: 5px;
+}
+
+.form-group input{
+    width: 430px;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+}
+
+.form-group textarea{
+    width: 430px;
+    height: 120px;
+    resize: none;
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.enviar{
+    width: 100px;
+    background-color: #509d87;
+    padding: 10px ;
+    color: #ffff;
+    font-weight: bold;
+    float:right
+}
+
+.rodape{
+    padding: 10px;
+    text-align: center;
+    background-color: #2c584c;
+    color:#ffff;
+}
+
+
+
+/*Responsividade Media Query*/
+
+@media (max-width: 1010px){
+
+    /*Criar o menu haburguer*/
+
+    .group-2{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .descrito{
+        
+        flex-direction: row;
+        gap: 15px;
+        width: 500px;
+    }
+
+    .bloc1{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+}
+
+
+@media (max-width: 914px){
+
+    
+
+    .ilustracoes{
+        display: none;
+    }
+    .group-2{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .descrito{
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        width: 400px;
+    }
+
+    .bloc1{
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+    }
+
+    .group-2 img{
+        width: 500px;
+        height: auto;
+        
+    }
+
+    
+  
+
+}
+
+
+@media (max-width: 850px){
+    .cmd-1{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .elementos{
+        width: 455px;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 720px){
+   .envio-email{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+   }
+
+   .envio-email button{
+        margin: 0;
+        
+   }
+}
+
+
+@media (max-width: 550px){
+    .group{
+        text-align: center;
+        align-items: center;
+        
+    }
+
+    .group-2 img{
+        width: 480px;
+        height: auto;
+        
+    }
+
+    .info-inicial{
+        align-items: center;
+        margin: 0;
+        width: 480px;
+    }
+ }
