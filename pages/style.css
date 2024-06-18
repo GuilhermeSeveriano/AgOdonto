@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+
+html{
+    font-family: Roboto;
+}
+
+.clear{clear: both;}
+.container{
+    max-width: 1000px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+
+
+
+section.header-principal{
+    width: 100%;
+    padding: 30px 0;
+    min-height: 600px;
+    background-image: url(../assets/images/bg_01.png);
+    background-size: cover;
+}
+
+.logo{
+    float: left;
+    width: 166px;
+    height: 64px;
+    background-image: url(../assets/images/logo.png);
+    background-size: 100% 100%;
+}
+
+header nav{
+    float: left;
+    padding-left: 60px;
+}
+
+header nav ul{
+    list-style-type: none ;
+}
+
+header li{
+    display: inline-block;
+    font-size: 16px;
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+
+header li > a{
+    color: white;
+    text-decoration: none;
+}
+
+.telefone-header{
+    float: left;
+}
+
+.telefone-header span{
+    font-size: 20px;
+    color: #ffff;
+    padding-left: 15px;
+}
+
+section.header-principal header{
+    border-bottom: 3px solid rgba(71, 83, 88, 0.14);
+    padding-bottom: 25px;
+}   
+
+
+.group{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.info-inicial{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-right: 30px;
+}
+
+.info-inicial h2{
+    font-size: 37px;
+    line-height: 38px;
+    color: #509d87;
+}
+
+.info-inicial p{
+    line-height: 30px;
+    font-size: 19px;
+}
+
+.envio-email input, button{
+    padding: 19px;
+    border-radius: 20px;
+    border: none;
+}
+
+.envio-email button{
+    background-color: #00daaa;
+    color: #ffff;
+    text-transform: uppercase;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+
+.ajuste-imagem{
+    display: flex;
+    gap: 30px;
+    margin-left: 30px;
+}
+
+.ajuste-imagem img{
+    height: 180px;
+    
+}
+
+.diferencial{
+    padding: 80px;
+}
+
+
+.cmd-1{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+}
+
+.elementos{
+    width: 255px;
+}
+
+.elementos img{
+    height: 55px;
+}
+
+.elementos b{
+    color: #7dd5b0;
+}
+
+.group-2{
+    display: flex;
+    gap: 30px;
+}
+
+.group-2 img{
+    width: 700px;
+}
+
+.descrito{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 400px;
+}
+
+.descrito h2{
+    color: #a9c4b8;
+}
+
+.descrito b{
+    color: #03ca9f;
+}
