@@ -19,13 +19,18 @@
 
 html{
     font-family: Roboto;
+    scroll-behavior: smooth;
 }
 
-.clear{clear: both;}
+
 .container{
-    max-width: 1050px;
-    padding: 0 2%;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    
+
+
 }
 
 
@@ -43,8 +48,6 @@ section.header-principal{
     float: left;
     width: 166px;
     height: 64px;
-    /* background-image: url(../assets/images/logo.png);
-    background-size: 100% 100%; */
     font-family: fonte2;
     font-size: 20px;
     font-weight: bold;
@@ -53,7 +56,6 @@ section.header-principal{
 
 header nav{
     float: left;
-    padding-left: 60px;
     padding-top: 10px;
 }
 
@@ -80,6 +82,7 @@ header li > a{
 .telefone-header{
     float: left;
     padding-top: 10px;
+    display: flex;
 }
 
 .telefone-header span{
@@ -176,11 +179,13 @@ section.header-principal header{
 .group-2{
     display: flex;
     gap: 30px;
+    /* justify-content: center; */
 }
 
 .group-2 img{
     width: 700px;
     height: 405px;
+    
 }
 
 .descrito{
@@ -188,7 +193,9 @@ section.header-principal header{
     flex-direction: column;
     gap: 15px;
     width: 400px;
+    
 }
+
 
 .descrito h2{
     color: #a9c4b8;
@@ -276,13 +283,85 @@ section.header-principal header{
     color:#ffff;
 }
 
+.hamburguer div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 7px;
+   
+   
 
+}
+.hamburguer{
+    display: none  ;
+    
+}
+
+.menu-mobile{
+    display: none;
+    position: fixed;
+    z-index: 6;
+    top:0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(138, 138, 138, 0.7);
+    flex-direction: column !important;
+    gap: 10px;
+}
+
+.container-mobile{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style-type: none;
+    
+}
+
+.container-mobile a{
+    color: #11463a;
+}
+
+.close{
+    margin-left: 2px;
+    background: #fff;
+    width: 15px;
+    height: 18px;
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+}
 
 /*Responsividade Media Query*/
 
 @media (max-width: 1010px){
 
     /*Criar o menu haburguer*/
+
+
+
+    /*Quando chegar aqui a nav + telefone tem que sumir 
+    e aparecer o hamburguer */
+
+    
+
+    .telefone-header{
+        display: none;
+    }
+    .navigation{
+        display: none
+    }
+
+    .hamburguer{
+        display: block;
+        cursor: pointer;
+        margin: 0;
+        margin-top: 5px;
+    }
+
 
     .group-2{
         display: flex;
@@ -303,6 +382,23 @@ section.header-principal header{
         margin-left: 10px;
     }
 
+}
+
+
+@media (max-width: 990px){
+    
+    .group-2{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    .descrito{
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        width: 400px;
+    }
 }
 
 

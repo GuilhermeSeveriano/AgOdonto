@@ -5,30 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="shortcut icon" href="../assets/images/icones/icone05.png" type="image/x-icon">
     <title>DenteFeliz</title>
 </head>
 
 <body>
-    <section class="header-principal">
+    <section class="header-principal" id="header-1">
         <header>
             <div class="container">
                 <div class="logo">SorriaSorrisos</div>
-                <nav>
+                <nav class="navigation">
                     <ul>
-                        <li><a href="">Invisalign</a></li>
-                        <li><a href="">Beneficios</a></li>
-                        <li><a href="">Serve para mim</a></li>
-                        <li><a href="">Contato</a></li>
+                        <li><a href="#header-1">Invisalign</a></li>
+                        <li><a href="#beneficios">Beneficios</a></li>
+                        <li><a href="#serve">Serve para mim</a></li>
+                        <li><a href="#cntt">Contato</a></li>
                     </ul>
                 </nav>
+
+
+
+                <div class="menu-mobile" id="mobileMenu">
+                    <div class="close" id="closeButton">
+                        <i class="icon-remove"></i>
+                    </div>
+                    <ul class="container-mobile">
+                        <li><a href="#header-1">Invisalign</a></li>
+                        <li><a href="#beneficios">Beneficios</a></li>
+                        <li><a href="#serve">Serve para mim</a></li>
+                        <li><a href="">Contato</a></li>
+                    </ul>
+
+                    
+                </div>
+                <div class="hamburguer" id="hamburguerButton">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+
+                
+                    
+        
+
+
+
                 <div class="telefone-header">
                     <span>(11) 99999-9999</span>
                 </div>
-                <div class="clear"></div>
+                
             </div>
         </header>
-        <div class="group">
+
+
+
+        <div class="group" >
             <div class="info-inicial">
                 <h2>Seu sorriso perfeito <br> através de um tratamento <br> discreto e inovador</h2>
 
@@ -55,45 +87,51 @@
         </div>
     </section>
 
-    <section class="diferencial">
+    <section class="diferencial" id="beneficios">
         <div class="cmd-1">
             <div class="elementos">
                 <img src="../assets/images/icones/icone01.png" alt="">
                 <h2>Discreto por ser <br> <b>transparente</b></h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit id culpa omnis velit</p>
+                <p>O Invisalign é feito a partir de um plástico médico transparente e resistente que é praticamente
+                    invisível!</p>
             </div>
             <div class="elementos">
                 <img src="../assets/images/icones/icone02.png" alt="">
                 <h2>Móvel, <b>não atrapalha</b> <br> para beber ou comer</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit id culpa omnis velit</p>
+                <p>Diferente dos brequetes do aparelho fixo, o Invisalign permite que você retire o aparelho para comer
+                    e fazer a higiene.</p>
             </div>
             <div class="elementos">
                 <img src="../assets/images/icones/icone03.png" alt="">
                 <h2>Livre dos fios ou metais <br> <b>muito mais conforto</b></h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit id culpa omnis velit</p>
+                <p>A tecnologia vem crescendo e com isso o alinhamentos estéticos vão se tornando cada vez mais
+                    confortável e discretos.</p>
             </div>
         </div>
         <div class="cmd-1">
             <div class="elementos">
                 <img src="../assets/images/icones/icone04.png" alt="">
                 <h2>Consultas e resultados <br><b>mais rápidos</b></h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit id culpa omnis velit</p>
+                <p>Em média, as visitas ao dentista são de seis ou oito semanas, pois não há estrutura fixa aos dentes.
+                </p>
             </div>
             <div class="elementos">
                 <img src="../assets/images/icones/icone05.png" alt="">
                 <h2><b>Não atrapalha para</b><br> falar ou cantar :)</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit id culpa omnis velit</p>
+                <p>O tratamento com Invisalign é bem discreto e como não sao volumosos, não atrapalham ao falar ou
+                    cantar :D</p>
             </div>
             <div class="elementos">
                 <img src="../assets/images/icones/icone06.png" alt="">
                 <h2>Veja o resultado <br><b>antes de começar</b></h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit id culpa omnis velit</p>
+                <p>Com a ajuda do software, voce pode ter diferentes simulações de resultado antes mesmo de iniciar o
+                    tratamento Invisalign.</p>
             </div>
         </div>
     </section>
 
 
-    <section class="amostra">
+    <section class="amostra" id="serve">
         <div class="group-2">
             <img src="../assets/images/rosto.png" alt="">
             <div class="descrito">
@@ -125,7 +163,7 @@
         </div>
     </section>
 
-    <section class="contato">
+    <section class="contato" id="cntt">
         <div class="info-contato">
             <h2>Entre em Contato</h2>
             <p>Telefone (11)99999-9999</p>
@@ -160,5 +198,5 @@
 
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
 </body>
-
+    <script src="./script.js"></script>
 </html>
