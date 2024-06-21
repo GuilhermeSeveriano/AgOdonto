@@ -24,7 +24,7 @@
 <h2 id="started">📌 Sobre</h2>
 
 <p>
-  Projeto real solicitado por um cliente para uma proposta de apresentação de uma clínica odontológica! Acompanhndo a montagem e o design feitos através do curso Danki Code e adaptados para o modelo de layout FlexBox.
+  Projeto real solicitado por um cliente com uma proposta de apresentação de uma clínica odontológica! Acompanhado a montagem e a prototipação através do curso da Danki Code, e realizado a adaptação para o modelo de layout FlexBox.
 </p> 
 
 <h2 id="started">📌 Acesso ao Projeto</h2>
